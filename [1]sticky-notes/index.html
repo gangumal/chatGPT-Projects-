@@ -17,7 +17,6 @@
                     placeholder="Search notes..." 
                     aria-label="Search notes"
                 >
-            </div>
             <div class="controls">
                 <button id="add-note-btn" class="btn" aria-label="Add new note">
                     <span>+</span> Add Note
@@ -27,18 +26,6 @@
                     <button class="color-option" data-color="#b2f2bb" aria-label="Green note"></button>
                     <button class="color-option" data-color="#a5d8ff" aria-label="Blue note"></button>
                 </div>
-            </div>
-        </header>
-
-        <main class="notes-grid" id="notes-container">
-            <!-- Notes will be added here by JavaScript -->
-        </main>
-    </div>
-
-    <template id="note-template">
-        <div class="note" tabindex="0">
-            <div class="note-header">
-                <button class="delete-btn" aria-label="Delete note">×</button>
             </div>
             <div class="note-content" contenteditable="true" aria-label="Note content"></div>
             <div class="note-footer">

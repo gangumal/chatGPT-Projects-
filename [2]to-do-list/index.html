@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My To-Do Notebook</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1>My To-Do Notebook</h1>
+
+      <!-- Task Controls -->
+      <div class="controls">
+        <input type="text" id="task-input" placeholder="Enter new task..." aria-label="New task">
+        <input type="date" id="task-date" aria-label="Task date">
+
+        <div class="color-options">
+          <button class="color-option" data-color="#ffec99" aria-label="Yellow task"></button>
+          <button class="color-option" data-color="#b2f2bb" aria-label="Green task"></button>
+          <button class="color-option" data-color="#a5d8ff" aria-label="Blue task"></button>
+        </div>
+
+        <button id="add-task-btn" class="btn" aria-label="Add Task">
+          <span>+</span> Add Task
+        </button>
+      </div>
+    </header>
+
+    <!-- All grouped lists appear here -->
+    <main class="task-grid">
+      <div id="groups-container"></div>
+    </main>
+  </div>
+
+  <template id="task-list-item-template">
+    <li class="task-item">
+      <span class="task-text" contenteditable="true"></span>
+      <span class="task-date"></span>
+    </li>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
